@@ -9,6 +9,7 @@ public class Testing : MonoBehaviour
     void Start()
     {
         Debug.Log("This is the camera!");
+        Debug.Log("Now I am on Rider");
     }
 
     // Update is called once per frame
