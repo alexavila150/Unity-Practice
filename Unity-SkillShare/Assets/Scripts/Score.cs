@@ -12,10 +12,8 @@ public class Score : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag.Equals("gap"))
-        {
-            score++;
-            Debug.Log("Score: " + score);
-        }
+        if (!other.gameObject.tag.Equals("gap")) return;
+        score++;
+        Debug.Log("Score: " + score);
     }
 }
