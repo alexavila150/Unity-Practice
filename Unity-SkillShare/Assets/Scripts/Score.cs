@@ -1,10 +1,13 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 
 
 public class Score : MonoBehaviour
 {
     public int score;
+    public TextMeshProUGUI scoreUi;
+
     public void Update()
     {
         
@@ -15,5 +18,7 @@ public class Score : MonoBehaviour
         if (!other.gameObject.tag.Equals("gap")) return;
         score++;
         Debug.Log("Score: " + score);
+        scoreUi.text = score.ToString();
+        
     }
 }
