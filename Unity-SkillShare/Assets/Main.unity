@@ -616,6 +616,7 @@ GameObject:
   - component: {fileID: 2096320795}
   - component: {fileID: 2096320799}
   - component: {fileID: 2096320800}
+  - component: {fileID: 2096320801}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -727,6 +728,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 500
   directionalSpeed: 20
+--- !u!114 &2096320801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096320794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9edf45487a84f34b3a9d2e60ca01b06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
 --- !u!1001 &1226390506648767282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -757,7 +771,7 @@ PrefabInstance:
     - target: {fileID: 2792851621403028717, guid: cba657206dbb5ea478d089d5fe108810,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 56.66
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2792851621403028717, guid: cba657206dbb5ea478d089d5fe108810,
         type: 3}
@@ -799,6 +813,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2792851622334713177, guid: cba657206dbb5ea478d089d5fe108810,
+        type: 3}
+      propertyPath: m_TagString
+      value: gap
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cba657206dbb5ea478d089d5fe108810, type: 3}
 --- !u!1001 &2597141350292453258
@@ -826,7 +845,7 @@ PrefabInstance:
     - target: {fileID: 1427032122592901457, guid: c4058bd094628e143a2eb198335c36cb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1427032122592901457, guid: c4058bd094628e143a2eb198335c36cb,
         type: 3}
@@ -868,6 +887,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1427032123721849061, guid: c4058bd094628e143a2eb198335c36cb,
+        type: 3}
+      propertyPath: m_TagString
+      value: gap
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4058bd094628e143a2eb198335c36cb, type: 3}
 --- !u!1001 &3054591379717587205
@@ -890,7 +914,7 @@ PrefabInstance:
     - target: {fileID: 3054591380128604074, guid: 055424693db1b624c804ff22be27376d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 69.4
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3054591380128604074, guid: 055424693db1b624c804ff22be27376d,
         type: 3}
@@ -941,6 +965,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3054591381112798750, guid: 055424693db1b624c804ff22be27376d,
+        type: 3}
+      propertyPath: m_TagString
+      value: gap
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 055424693db1b624c804ff22be27376d, type: 3}
