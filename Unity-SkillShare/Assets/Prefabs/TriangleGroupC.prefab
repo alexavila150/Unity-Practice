@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 1427032123721849059}
   m_Layer: 0
   m_Name: Gap
-  m_TagString: Untagged
+  m_TagString: gap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
