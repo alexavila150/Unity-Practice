@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
+using Random = System.Random;
 
 
 public class ObjectSpawner : MonoBehaviour
@@ -19,7 +22,12 @@ public class ObjectSpawner : MonoBehaviour
 
     void SpawnTriangles()
     {
+        //update position to a new position 30 units in front
         _lastSpawnedPosition = new Vector3(0, 0, _lastSpawnedPosition.z + 30);
-        Instantiate(trianglePrefabs[0], _lastSpawnedPosition, Quaternion.identity);
+        
+        //choose a random prefab to Instantiate
+        var random = new Random();
+        var index = random.Next(0, 3);
+        Instantiate(trianglePrefabs[index], _lastSpawnedPosition, Quaternion.identity);
     }
 }
